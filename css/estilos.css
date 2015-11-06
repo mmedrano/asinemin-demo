@@ -1,0 +1,110 @@
+body {
+	margin: 0 auto;
+	border: none;
+}
+
+#contacto {
+	background-color: #EAEAEA;
+	height: 600px;
+}
+
+#mision {
+	background-color: #EAEAEA;
+	height: 600px;
+}
+
+#nav-header {
+	margin-bottom: 0;
+  min-height: 80px;
+}
+
+#nav-header h1 {
+	margin: 0;
+}
+
+#nosotros {
+	background-color: #F1F1F1;
+	height: 600px;
+}
+
+#scroll-up {
+	background-color: #33D6D6 /*#0066CC*/;
+	bottom: 50px;
+	cursor: pointer;
+	display: none;
+	height: 40px;
+	opacity: .7;
+	position: fixed;
+	right: 20px;
+	width: 40px;
+	z-index: 1000;
+}
+
+#scroll-up:hover {
+	opacity: 1;
+}
+
+#top {
+	background-color: #F1F1F1;
+	height: 85px;
+}
+
+#vision {
+	background-color: #F1F1F1;
+	height: 600px;
+}
+
+.copyright a {
+	color: white;
+  font-weight: 600;
+  -webkit-text-stroke: 0.1px;
+}
+
+.footer-div {
+	background-color: #0D77B5 /*#00CCCC*/;
+	color: white;
+	padding: 40px 0px;
+}
+
+.navbar-brand {
+	height: 80px;
+	line-height: 80px;
+	padding: 0 15px;
+}
+
+.navbar-default {
+	background-color: #0D77B5/*#00CCCC*/;
+	border-radius: 0;
+	border: none;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-nav>li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav>li>a {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 55px;
+    padding: 0 20px 0 20px;
+}
+
+.scroll-up-in span {
+	color: white;
+	display: block;
+	font-size: 20px;
+	height: 50%;
+	margin-top: 15%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
