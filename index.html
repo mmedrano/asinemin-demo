@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
 </head>
 <body>
 	<div class="navbar-fixed-top">
@@ -37,9 +38,43 @@
 		</div>
 	</div>
 	<section id="top"></section>
+	<section id="cabecera">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  		<!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+
+  		<!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="images/pruebacarousel.png" alt="">
+		      <div class="carousel-caption">
+		        PRIMERO
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="images/pruebacarousel.png" alt="">
+		      <div class="carousel-caption">
+		        SEGUNDO
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="images/pruebacarousel.png" alt="">
+		      <div class="carousel-caption">
+		        TERCERO
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section>
 	<section id="nosotros"></section>
 	<section id="mision"></section>
-	<section id="vision"></section>
+	<section id="vision">
+		
+	</section>
 	<section id="contacto">
 		<div class="container">
 			<div class="contacto-form">
@@ -56,8 +91,8 @@
 				</div>
 				<div class="form-group col-sm-6">
 					<label>Nacimiento</label>
-					<div class='input-group date' id='datetimepicker1'>
-						<input type="text" class="form-control datepicker" data-provide="datepicker" placeholder="Ingrese su nombre"></input>
+					<div class='input-group date'>
+						<input type="text" class="form-control datepicker" data-provide="datepicker" id='dtPickerForm' placeholder="Ingrese su nombre" readonly></input>
 						<span class="input-group-addon">
 	              <span class="fa fa-calendar"></span>
 	          </span>
@@ -82,7 +117,7 @@
 					</div>
 				</div>
 				<div class="form-group col-sm-12 form-group-submit">
-					<button type="submit" class="btnasinemin">Enviar</button>
+					<button type="button" id="btnEnviar" data-loading-text="Loading..." class="btnasinemin" autocomplete="off">Enviar</button>
 				</div>
 			</div>
 		</div>
@@ -111,5 +146,18 @@
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/fnasinemin.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btnEnviar').on('click', function () {
+		    
+		    //alert('Hola');
+		    
+		  });
+			$('#dtPickerForm').datepicker();
+		});
+	</script>
 </body>
 </html>

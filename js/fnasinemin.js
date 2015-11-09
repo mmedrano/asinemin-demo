@@ -1,8 +1,5 @@
 $(document).ready(function(){
-	$('.datepicker').datepicker({
-    	format: 'mm/dd/yyyy',
-    	startDate: '-3d'
-	})
+	$('.carousel').carousel();
 
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 200) {

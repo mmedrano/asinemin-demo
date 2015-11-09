@@ -27,6 +27,11 @@ input[type="button"], input[type="submit"], button:hover {
   padding: 50px 0;
 }
 
+#dtPickerForm {
+	background-color: white;
+	cursor: pointer;
+}
+
 #mision {
 	background-color: #EAEAEA;
 	height: 600px;
