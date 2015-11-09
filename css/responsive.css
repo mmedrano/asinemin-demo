@@ -71,13 +71,13 @@
 	.navbar-default .navbar-nav>.active>a:focus {
 		/*color: #0d0d0d;*/
 		color: white;
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	.navbar-default .navbar-nav>li>a:hover, 
 	.navbar-default .navbar-nav>li>a:focus {
 		color: white;
-	    font-size: 1.1em;
+	    font-size: 1.2em;
 		/*color: #0d0d0d;*/
 	}
 }
@@ -280,6 +280,9 @@
 	.form-group-submit {
 		margin-top: 25px;
 	}
+	input[type="button"], input[type="submit"], button {
+		opacity: 1;
+	}
 	.pricing-table .pricing-item{
 		float: none;
 		width: 100%;
@@ -316,6 +319,9 @@
 	.form-group-submit {
 		margin-top: 25px;
 	}
+	input[type="button"], input[type="submit"], button {
+		opacity: 1;
+	}
 }
 
 /* 5 - media screen and (max-width: 500px)  End
@@ -330,6 +336,9 @@
 	}
 	.contacto-form {
 		padding: 0;
+	}
+	input[type="button"], input[type="submit"], button {
+		opacity: 1;
 	}
 	.form-group-submit {
 		margin-top: 25px;
@@ -395,6 +404,9 @@
 	}
 	.form-group-submit {
 		margin-top: 25px;
+	}
+	input[type="button"], input[type="submit"], button {
+		opacity: 1;
 	}
 }
 

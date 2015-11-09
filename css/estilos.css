@@ -110,6 +110,7 @@ input[type="button"], input[type="submit"], button:hover {
 	background-color: #0D77B5/*#00CCCC*/;
 	border-radius: 0;
 	border: none;
+	opacity: .7;
 }
 
 .navbar-default .navbar-brand {
@@ -126,7 +127,7 @@ input[type="button"], input[type="submit"], button:hover {
 }
 
 .navbar-nav>li>a {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 600;
     line-height: 55px;
     padding: 0 20px 0 20px;

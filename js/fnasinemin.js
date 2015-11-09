@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	$('.datepicker').datepicker({
+    	format: 'mm/dd/yyyy',
+    	startDate: '-3d'
+	})
+
 	$(window).scroll(function(){
 		if($(this).scrollTop() > 200) {
 			$('#scroll-up').fadeIn('slow');
