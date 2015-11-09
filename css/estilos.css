@@ -1,11 +1,30 @@
 body {
 	margin: 0 auto;
 	border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input[type="button"], input[type="submit"], button {
+	background: #33D6D6;
+	border: 0px !important;
+  border-radius: 0px !important;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  min-height: 50px;
+  opacity: .7;
+  padding: 16px 30px 20px;
+  text-decoration: none;
+}
+
+input[type="button"], input[type="submit"], button:hover {
+	opacity: 1;
 }
 
 #contacto {
-	background-color: #EAEAEA;
-	height: 600px;
+  padding: 50px 0;
 }
 
 #mision {
@@ -52,6 +71,21 @@ body {
 #vision {
 	background-color: #F1F1F1;
 	height: 600px;
+}
+
+.contacto-form {
+	padding: 0 50px;
+}
+
+.contacto-form input[type="text"] {
+	border: 1px solid #33D6D6;
+  border-radius: 0px !important;
+  outline: none;
+  padding: 20px 10px;
+}
+
+.contacto-form h2, label {
+	color: #0D77B5;
 }
 
 .copyright a {
