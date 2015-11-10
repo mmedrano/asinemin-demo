@@ -23,6 +23,10 @@ input[type="button"], input[type="submit"], button:hover {
 	opacity: 1;
 }
 
+input[type="date"]::-webkit-inner-spin-button{
+    display:none;
+}
+
 #contacto {
   padding: 50px 0;
 }
@@ -30,6 +34,11 @@ input[type="button"], input[type="submit"], button:hover {
 #dtPickerForm {
 	background-color: white;
 	cursor: pointer;
+}
+
+#top {
+	/*margin-top: 85px;*/
+	height: 85px;
 }
 
 #mision {
@@ -68,11 +77,6 @@ input[type="button"], input[type="submit"], button:hover {
 	opacity: 1;
 }
 
-#top {
-	background-color: #F1F1F1;
-	height: 85px;
-}
-
 #vision {
 	background-color: #F1F1F1;
 	height: 600px;
@@ -82,7 +86,7 @@ input[type="button"], input[type="submit"], button:hover {
 	padding: 0 50px;
 }
 
-.contacto-form input[type="text"] {
+.contacto-form input[type="text"], input[type="date"] {
 	border: 1px solid #33D6D6;
   border-radius: 0px !important;
   outline: none;
@@ -117,13 +121,21 @@ input[type="button"], input[type="submit"], button:hover {
 	border: none;
 	opacity: .7;
 }
-
+/*
+.navbar-nav-a-focus {
+	color: #33D6D6;
+}
+*/
 .navbar-default .navbar-brand {
 	color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #33D6D6;
 }
 
 .navbar-nav>li {
