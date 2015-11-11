@@ -28,17 +28,14 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #contacto {
-  padding: 50px 0;
+  background-color: rgba(13, 119, 181, 0.86);
+  color: white;
+	padding: 50px 0;
 }
 
 #dtPickerForm {
 	background-color: white;
 	cursor: pointer;
-}
-
-#top {
-	/*margin-top: 85px;*/
-	height: 85px;
 }
 
 #mision {
@@ -60,6 +57,10 @@ input[type="date"]::-webkit-inner-spin-button{
 	height: 600px;
 }
 
+#participar {
+  padding: 50px 0;
+}
+
 #scroll-up {
 	background-color: #33D6D6 /*#0066CC*/;
 	bottom: 50px;
@@ -77,24 +78,41 @@ input[type="date"]::-webkit-inner-spin-button{
 	opacity: 1;
 }
 
+#top {
+	/*margin-top: 85px;*/
+	height: 85px;
+}
+
 #vision {
 	background-color: #F1F1F1;
 	height: 600px;
 }
 
-.contacto-form {
-	padding: 0 50px;
+.contacto-cab {
+	text-align: center;
+	margin-bottom: 40px;
 }
 
-.contacto-form input[type="text"], input[type="date"] {
-	border: 1px solid #33D6D6;
+.contacto-cab h2 {
+	font-size: 45px;
+}
+
+.contacto-form button {
+	padding: 0;
+	width: 100%;
+}
+
+.contacto-form input[type="text"] {
+	border: 1px solid #0D77B5;
   border-radius: 0px !important;
   outline: none;
-  padding: 20px 10px;
 }
 
-.contacto-form h2, label {
-	color: #0D77B5;
+.contacto-form textarea {  
+	border: 1px solid #0D77B5;
+  border-radius: 0px !important;
+  outline: none;
+  padding: 10px 10px;
 }
 
 .copyright a {
@@ -116,16 +134,11 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 .navbar-default {
-	background-color: #0D77B5/*#00CCCC*/;
+	background-color: rgba(13, 119, 181, 0.7);
 	border-radius: 0;
 	border: none;
-	opacity: .7;
 }
-/*
-.navbar-nav-a-focus {
-	color: #33D6D6;
-}
-*/
+
 .navbar-default .navbar-brand {
 	color: white;
 }
@@ -148,6 +161,38 @@ input[type="date"]::-webkit-inner-spin-button{
     font-weight: 600;
     line-height: 55px;
     padding: 0 20px 0 20px;
+}
+
+.participa-form {
+	padding: 0 50px;
+}
+
+.participa-form-cab {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.participa-form-cab h2 {
+	font-weight: bold;
+	font-size: 45px;
+}
+
+.participa-form input[type="text"], input[type="date"] {
+	border: 1px solid #33D6D6;
+  border-radius: 0px !important;
+  outline: none;
+  padding: 20px 10px;
+}
+
+.participa-form h2, label {
+	color: #0D77B5;
+}
+
+.participa-form select {
+	border: 1px solid #33D6D6;
+  border-radius: 0px !important;
+  height: 42px;
+  outline: none;
 }
 
 .scroll-up-in span {

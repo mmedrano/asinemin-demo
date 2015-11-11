@@ -2,15 +2,14 @@ $(document).ready(function(){
 	var otnosotros = $('#nosotros').offset().top;
 	var otmision = $('#mision').offset().top;
 	var otvision = $('#vision').offset().top;		
+	var otparticipar = $('#participar').offset().top;
 	var otcontacto = $('#contacto').offset().top;
+	var topHeight = $('#top').outerHeight();
 	var colorHover = '#33D6D6', colorNoHover = 'white';
-	//var windowWidth = $(window).width();
 	var windowWidth = $('body').outerWidth();
 	var maxWidthResponsive = 992;
 
-	$('.carousel').carousel();
-
-	//$('#dtPickerForm').datepicker();
+	//$('.carousel').carousel();
 
 	$("a[href*='#']").hover(function(){
 		$(this).css('color', '');
@@ -21,10 +20,10 @@ $(document).ready(function(){
 		otnosotros = $('#nosotros').offset().top;
 		otmision = $('#mision').offset().top;
 		otvision = $('#vision').offset().top;		
+		otparticipar = $('#participar').offset().top;
 		otcontacto = $('#contacto').offset().top;
+		topHeight = $('#top').outerHeight();
 		windowWidth = $(window).width();
-		//windowWidth = $('body').outerWidth();
-		console.log('windowWidth: '+ windowWidth);
 	});
 
 	$(window).scroll(function(){
@@ -37,21 +36,25 @@ $(document).ready(function(){
 		}
 
 		if(windowWidth > maxWidthResponsive){
-			var flagotn = false, flagotm = false, flagotv = false, flagotc = false;
+			scrollTop += topHeight; 
+			var flagotn = false, flagotm = false, flagotv = false, flagotp = false, flagotc = false;
 
 			if(scrollTop >= otnosotros && scrollTop < otmision) {
 				flagotn = true;
 			}else if(scrollTop >= otmision && scrollTop < otvision) {
 				flagotm = true;
-			}else if(scrollTop >= otvision && scrollTop < otcontacto) {
+			}else if(scrollTop >= otvision && scrollTop < otparticipar) {
 				flagotv = true;
-			}else if(scrollTop > otcontacto) {
+			}else if(scrollTop > otparticipar && scrollTop < otcontacto && !$('#contacto').visible()) {
+				flagotp = true;
+			}else if(scrollTop > otcontacto || $('#contacto').visible()) {
 				flagotc = true;
 			}
 
 			$("a[href='#nosotros']").css('color', flagotn ? colorHover : colorNoHover);
 			$("a[href='#mision']").css('color', flagotm ? colorHover : colorNoHover);
 			$("a[href='#vision']").css('color', flagotv ? colorHover : colorNoHover);
+			$("a[href='#participar']").css('color', flagotp ? colorHover : colorNoHover);
 			$("a[href='#contacto']").css('color', flagotc ? colorHover : colorNoHover);
 
 		}
@@ -63,10 +66,11 @@ $(document).ready(function(){
 
 	$("a[href*='#']").click(function(){
 		var href = $(this).attr("href");
-		var section = $(href).offset().top;
-		var top = $('#top').outerHeight();
+		if(href != '#carousel-asinemin'){
+			var section = $(href).offset().top;
 
-		$("html,body").animate({ scrollTop: (section - top)}, 1000);
-		return false;
+			$("html,body").animate({ scrollTop: (section - topHeight)}, 1000);
+			return false;
+		}
 	})
 });
