@@ -44,7 +44,6 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #mision {
-	background-color: #EAEAEA;
 	height: 600px;
 }
 
@@ -58,7 +57,7 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #nosotros {
-	background-color: #F1F1F1;
+	background-color: #F9F9F9;
 	height: 600px;
 }
 
@@ -67,7 +66,7 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #scroll-up {
-	background-color: #33D6D6 /*#0066CC*/;
+	background-color: #33D6D6;
 	bottom: 50px;
 	cursor: pointer;
 	display: none;
@@ -84,12 +83,11 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #top {
-	/*margin-top: 85px;*/
 	height: 85px;
 }
 
 #vision {
-	background-color: #F1F1F1;
+	background-color: #F9F9F9;
 	height: 600px;
 }
 
@@ -124,6 +122,10 @@ input[type="date"]::-webkit-inner-spin-button{
   padding: 10px 10px;
 }
 
+.copyright {
+	padding: 20px 0;
+}
+
 .copyright a {
 	color: white;
   font-weight: 600;
@@ -131,9 +133,9 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 .footer-div {
-	background-color: #0D77B5 /*#00CCCC*/;
+	background-color: #0D77B5;
 	color: white;
-	padding: 40px 0px;
+	padding: 25px 0px;
 }
 
 .navbar-brand {
@@ -213,4 +215,16 @@ input[type="date"]::-webkit-inner-spin-button{
 	position: absolute;
 	text-align: center;
 	width: 100%;
+}
+
+.social a {
+  font-size: 32px;
+  margin: 0 10px;
+  color: white;
+}
+
+.social a:hover {
+	color: #33D6D6;
+	transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
