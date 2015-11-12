@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function(){
 	var otnosotros = $('#nosotros').offset().top;
 	var otmision = $('#mision').offset().top;
@@ -74,3 +77,12 @@ $(document).ready(function(){
 		}
 	})
 });
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -12.0553017, lng: -77.0626949},
+    zoom: 14,
+	scrollwheel: false
+  });
+}

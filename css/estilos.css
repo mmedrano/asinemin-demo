@@ -30,12 +30,17 @@ input[type="date"]::-webkit-inner-spin-button{
 #contacto {
   background-color: rgba(13, 119, 181, 0.86);
   color: white;
-	padding: 50px 0;
+	padding: 40px 0;
 }
 
 #dtPickerForm {
 	background-color: white;
 	cursor: pointer;
+}
+
+#map {
+	height: 300px;
+	width: 100%;
 }
 
 #mision {
@@ -95,6 +100,10 @@ input[type="date"]::-webkit-inner-spin-button{
 
 .contacto-cab h2 {
 	font-size: 45px;
+}
+
+.contacto-container span{
+	font-weight: bold;
 }
 
 .contacto-form button {
