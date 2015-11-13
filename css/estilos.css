@@ -44,7 +44,11 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 
 #mision {
-	height: 600px;
+	padding: 50px 0;
+}
+
+#mision span {
+	font-size: 2em;
 }
 
 #nav-header {
@@ -88,8 +92,13 @@ input[type="date"]::-webkit-inner-spin-button{
 
 #vision {
 	background-color: #F9F9F9;
-	height: 600px;
+	padding: 50px 0;
 }
+
+#vision span {
+	font-size: 2em;
+}
+
 
 .contacto-cab {
 	text-align: center;
@@ -136,6 +145,17 @@ input[type="date"]::-webkit-inner-spin-button{
 	background-color: #0D77B5;
 	color: white;
 	padding: 25px 0px;
+}
+
+.mision-cab	{
+	color: #0D77B5;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.mision-cab h2 {
+	font-weight: bold;
+  font-size: 45px;
 }
 
 .navbar-brand {
@@ -227,4 +247,15 @@ input[type="date"]::-webkit-inner-spin-button{
 	color: #33D6D6;
 	transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
+}
+
+.vision-cab	{
+	color: #0D77B5;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.vision-cab h2 {
+	font-weight: bold;
+  font-size: 45px;
 }

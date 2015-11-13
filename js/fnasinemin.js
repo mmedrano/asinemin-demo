@@ -30,7 +30,7 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function(){
-		var scrollTop = $(this).scrollTop();
+		var scrollTop = $(this).scrollTop() + 100;
 
 		if(scrollTop > 200) {
 			$('#scroll-up').fadeIn('slow');
@@ -48,9 +48,9 @@ $(document).ready(function(){
 				flagotm = true;
 			}else if(scrollTop >= otvision && scrollTop < otparticipar) {
 				flagotv = true;
-			}else if(scrollTop > otparticipar && scrollTop < otcontacto && !$('#contacto').visible()) {
+			}else if(scrollTop >= otparticipar && scrollTop < otcontacto && !$('#contacto').visible()) {
 				flagotp = true;
-			}else if(scrollTop > otcontacto || $('#contacto').visible()) {
+			}else if(scrollTop >= otcontacto || $('#contacto').visible()) {
 				flagotc = true;
 			}
 
